@@ -1,0 +1,149 @@
+[
+  {
+    "name": "job",
+    "x_axis": [
+      {
+        "name": "Gross Profit",
+        "handle": "GrossProfit",
+        "table": "SolarInstall"
+      }
+    ],
+    "y_axis": {
+      "jobs": 30,
+      "days": 0
+    },
+    "principles": [
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Hemi Hill'))",
+        "entry": "Hemi Hill",
+        "stackable": false
+      },
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Rob Noyer'))",
+        "entry": "Rob Noyer",
+        "stackable": false
+      }
+    ],
+    "exclusions": [],
+    "linegraph": true,
+    "bargraph": false
+  },
+  {
+    "name": "jobbar",
+    "x_axis": [
+      {
+        "name": "Gross Profit",
+        "handle": "GrossProfit",
+        "table": "SolarInstall"
+      }
+    ],
+    "y_axis": {
+      "jobs": 30,
+      "days": 0
+    },
+    "principles": [
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Hemi Hill'))",
+        "entry": "Hemi Hill",
+        "stackable": false
+      },
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Rob Noyer'))",
+        "entry": "Rob Noyer",
+        "stackable": false
+      }
+    ],
+    "exclusions": [],
+    "linegraph": false,
+    "bargraph": true
+  },
+  {
+    "name": "testy",
+    "x_axis": [
+      {
+        "name": "Gross Profit",
+        "handle": "GrossProfit",
+        "table": "SolarInstall"
+      }
+    ],
+    "y_axis": {
+      "jobs": 30,
+      "days": 0
+    },
+    "principles": [
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Rob Noyer'))",
+        "entry": "Rob Noyer",
+        "stackable": false
+      },
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Hemi Hill'))",
+        "entry": "Hemi Hill",
+        "stackable": false
+      },
+      {
+        "name": "Landscaped Panels",
+        "handle": "InstJobID IN (SELECT InstJobID FROM JobVariations WHERE LandscapedPanels > 14)",
+        "entry": "",
+        "stackable": false
+      },
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Sajan'))",
+        "entry": "Sajan",
+        "stackable": false
+      },
+      {
+        "name": "Job With Employee",
+        "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == 'Brendan Something'))",
+        "entry": "Brendan Something",
+        "stackable": false
+      }
+    ],
+    "exclusions": [],
+    "linegraph": true,
+    "bargraph": true
+  },
+  {
+    "name": "new",
+    "x_axis": [
+      {
+        "name": "Gross Profit",
+        "handle": "GrossProfit",
+        "table": "SolarInstall"
+      }
+    ],
+    "y_axis": {
+      "jobs": 3,
+      "days": 0
+    },
+    "principles": [],
+    "exclusions": [],
+    "linegraph": true,
+    "bargraph": false
+  },
+  {
+    "name": "new",
+    "x_axis": [
+      {
+        "name": "Gross Profit",
+        "handle": "GrossProfit",
+        "table": "SolarInstall"
+      }
+    ],
+    "y_axis": {
+      "jobs": 3,
+      "days": 0
+    },
+    "principles": [],
+    "exclusions": [],
+    "linegraph": true,
+    "bargraph": true
+  }
+]

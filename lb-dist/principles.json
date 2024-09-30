@@ -1,0 +1,43 @@
+{
+  "principles": [
+    {
+      "name": "Job With Employee",
+      "handle": "InstJobID IN (SELECT InstJobID FROM SiteVisit WHERE EmployeeID IN (SELECT EmployeeID FROM Employee WHERE Name == '{entry}'))",
+      "entry": "text",
+      "stackable": true
+    },
+    {
+      "name": "Landscaped Panels",
+      "handle": "InstJobID IN (SELECT InstJobID FROM JobVariations WHERE LandscapedPanels >= {entry})",
+      "entry": "int",
+      "stackable": true
+    },
+    {
+      "name": "Job With Company",
+      "handle": "SolarCompanyABN IN (SELECT ABN FROM SolarCompany WHERE CompanyName == '{entry}')",
+      "entry": "text",
+      "stackable": true
+    },
+    {
+      "name": "Job With RoofType",
+      "handle": "InstJobID IN (SELECT InstJobID FROM SolarInstall WHERE RoofType >= '{entry}')",
+      "entry": "text",
+      "stackable": true
+    },
+    {
+      "name": "Job With Panels",
+      "handle": "NoOfPanels == {entry}",
+      "entry": "int",
+      "stackable": true
+    },
+    {
+      "name": "Job With Panels On Tilt",
+      "handle": "InstJobID IN (SELECT InstJobID FROM JobVariations WHERE PanelsTilted >= {entry})",
+      "entry": "int",
+      "stackable": true
+    }
+
+
+
+  ]
+}

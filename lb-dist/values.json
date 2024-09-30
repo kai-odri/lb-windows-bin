@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "name": "Gross Profit",
+      "handle": "GrossProfit",
+      "table": "SolarInstall"
+    },
+    {
+      "name": "Total kW",
+      "handle": "NoOfPanels * PanelW",
+      "table": "SolarInstall"
+    }
+  ]
+}
